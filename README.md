@@ -1,3 +1,13 @@
+安装vim
+```
+git clone https://github.com/yugengde/vim
+cd vim
+mkdir /usr/local/vim
+sudo chown xxx /usr/local/vim
+./configure --enable-multibyte --enable-rubyinterp=dynamic --with-python3-config-dir=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu/ --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-pythoninterp --enable-cscope --enable-gui=auto --with-features=huge --with-x --enable-fontset --with-compiledby=yugengde --enable-fail-if-missing --prefix=/usr/local/vim make j4 && make install
+sudo ln -s /usr/local/vim/bin/vim /usr/local/bin/vim
+```
+
 ![Vim Logo](https://github.com/vim/vim/blob/master/runtime/vimlogo.gif)
 
 [![Build Status](https://travis-ci.org/vim/vim.svg?branch=master)](https://travis-ci.org/vim/vim)
